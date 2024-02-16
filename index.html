@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="./js/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<title>F1 Racer API Data Homework</title>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center text-danger mt-4">
+        <h1>F1 Racer API Data</h1>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="container d-flex justify-content-center mt-4">
+        
+        <form name="testData" action="" id="test-data-form">
+            <label for="season">Season</label>
+            <input type="text" name="season" id="season">
+            <label for="round">Round</label>
+            <input type="text" name="round" id="round">
+            <button class="btn btn-primary mx-3" type="submit" id="submit-button">Get Standings</button> 
+        </form>
+
+    </div>
+
+    <br>
+    <br>
+
+
+    <!-- Position, fullName (givenName & FamilyName), Nationality, Sponsor, Points -->
+
+    <div class="container mt-5 mb-5">
+
+        <table class="table table-striped">
+
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Name</th>
+                    <th>Nationality</th>
+                    <th>Sponsor</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+
+            <tbody class="racer-data">
+                
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
